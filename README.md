@@ -1,6 +1,2 @@
 # Demostracion
-sdsd!
-
-## subtitulo
-
-ve mi ejemplo porfavor.
+ este read me es parte del ejemplo
