@@ -1,0 +1,71 @@
+Este programa es un sistema básico de gestión de biblioteca implementado en Java. Permite gestionar libros y usuarios, así como realizar operaciones como listar, prestar y devolver libros. Está diseñado para que sea fácil de entender y utilizar, ideal para estudiantes.
+
+Características principales
+
+Listar libros: Muestra todos los libros disponibles en la biblioteca, indicando si están prestados o disponibles.
+
+Prestar libros: Permite a un usuario prestar un libro, siempre y cuando esté disponible.
+
+Devolver libros: Los usuarios pueden devolver libros que previamente hayan prestado.
+
+Sistema interactivo: Usa el teclado para interactuar con el programa mediante un menú.
+
+Clases principales
+
+1. Book
+
+Representa un libro en la biblioteca.
+
+Atributos:
+
+title (título del libro).
+
+author (autor del libro).
+
+available (indica si el libro está disponible para prestar).
+
+Métodos principales:
+
+getTitle(), getAuthor() y isAvailable(): Obtienen información del libro.
+
+setAvailable(boolean available): Cambia el estado de disponibilidad del libro.
+
+toString(): Devuelve una representación textual del libro.
+
+2. User
+
+Representa a un usuario que puede prestar libros.
+
+Atributos:
+
+name (nombre del usuario).
+
+id (identificador del usuario).
+
+borrowedBooks (lista de libros que el usuario ha prestado).
+
+Métodos principales:
+
+borrowBook(Book book): Agrega un libro a la lista de libros prestados por el usuario.
+
+returnBook(Book book): Elimina un libro de la lista de libros prestados.
+
+toString(): Devuelve una representación textual del usuario.
+
+3. Library
+
+Gestiona la colección de libros y las operaciones relacionadas.
+
+Atributos:
+
+books (lista de libros en la biblioteca).
+
+Métodos principales:
+
+addBook(Book book): Agrega un libro a la biblioteca.
+
+lendBook(String title, User user): Permite prestar un libro a un usuario si está disponible.
+
+returnBook(String title, User user): Permite devolver un libro que está prestado.
+
+listBooks(): Muestra la lista de libros y su estado.
